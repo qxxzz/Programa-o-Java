@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main
+{
+        public static void main(String[] args) {
+            //variaveis
+            Scanner teclado = new Scanner(System.in);
+            double valormensalidade, custotransporte, custoalimentacao, valormensal, valoranual   = 0.00;
+            
+            //entradas
+            
+            System.out.println("Valor da Mensalidade");
+            valormensalidade = teclado.nextDouble();
+            System.out.println ("Custo do Transporte");
+            custotransporte = teclado.nextDouble();
+            System.out.println ("Custo da Alimentação");
+            custoalimentacao = teclado.nextDouble();
+            
+            //processamento
+            valormensal = (valormensalidade + custotransporte + custoalimentacao);
+            valoranual = (valormensalidade + custotransporte + custoalimentacao) *12;
+            
+            //saidas
+            System.out.println(valormensal);
+            System.out.println(valoranual);
+        }
+}

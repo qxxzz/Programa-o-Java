@@ -1,0 +1,26 @@
+//Atividade 1
+import java.util.Scanner;
+
+public class Main
+{
+        public static void main(String[] args) {
+            //variaveis
+            Scanner teclado = new Scanner(System.in);
+            double notaatividade, notatrabalho, notaprova, media = 0.00;
+            
+            //entradas
+            System.out.println("Calculadora de Média ::..");
+            System.out.println("Digite a nota da Atividade ");
+            notaatividade = teclado.nextDouble();
+            System.out.println ("Digite a nota do Trabalho");
+            notatrabalho = teclado.nextDouble();
+            System.out.println("Digite a nota da Prova");
+            notaprova = teclado.nextDouble();
+            
+            //processamento
+            media = (notaatividade * 0.20) + (notatrabalho *0.60) + (notaprova * 0.40);
+            
+            //saidas
+            System.out.println(media);
+        }
+}

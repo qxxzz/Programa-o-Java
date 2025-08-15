@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main
+{
+        public static void main(String[] args) {
+            //variaveis
+            Scanner teclado = new Scanner(System.in);
+            double anonascimento, anoatual, diferencaanos, diasvividos  = 0.00;
+            
+            //entradas
+            
+            System.out.println("Ano do Nascimento ");
+            anonascimento = teclado.nextDouble();
+            System.out.println ("Ano Atual");
+            anoatual = teclado.nextDouble();
+            
+            
+            
+            //processamento
+            diferencaanos = (anoatual - anonascimento) *365;
+            
+            //saidas
+            System.out.println(diferencaanos);
+        }
+}
